@@ -1,0 +1,15 @@
+~/Qt/5.15.0/Src
+
+delete config.cache
+
+export RPI_SYSROOT=/opt/raspi/sysroot
+
+export RPI_TOOLCHAIN=/opt/raspi/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
+
+./configure -opengl es2 -device linux-rasp-pi-g++ -device-option CROSS_COMPILE=$RPI_TOOLCHAIN -sysroot $RPI_SYSROOT -opensource -confirm-license -optimized-qmake -reduce-exports -static -no-pch -release -make libs -prefix "/usr/local/qt5pi" -skip qtwayland -skip qtscript -nomake examples -pkg-config -no-use-gold-linker -v
+
+make 
+
+make install
+
+
