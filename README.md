@@ -7,7 +7,7 @@ During testing of this Application, I have used Arduino and INA219 chip for sens
 To use Software Serial use test.ino file and to use Hardware Serial use ColoumbCounter.ino file.
 In the Arduino files all the INA219 configurations are done.
 
-To test my project, I have cross-compiled my Qt project for the Rsapberry Pi 3B module.
+To test my project, I have cross-compiled my Qt project for the Raspberry Pi 3B module.
 
 Functionalities of Appliction:
 i)Read the Battery Percentage by CoulombCounter Method.
